@@ -4,7 +4,6 @@ import styles from './App.module.css';
 import {fetchData} from './api';
 
 class App extends React.Component {
-
     state = {
         data: {},
     }
@@ -12,7 +11,7 @@ class App extends React.Component {
     async componentDidMount() {
         const fetchedData = await fetchData();
 
-        this.setState({data: data});
+        this.setState({data: fetchedData});
     }
 
     render() {
