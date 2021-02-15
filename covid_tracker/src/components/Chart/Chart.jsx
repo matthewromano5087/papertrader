@@ -19,14 +19,14 @@ const Chart = () => {
         ? (
         <Line
         data={{
-            labels: dailyData(({date}) => date),
+            labels: dailyData.map(({date}) => date),
             datasets: [{
-                data: dailyData(({confirmed}) => confirmed),
+                data: dailyData.map(({confirmed}) => confirmed),
                 label: 'Infected',
                 borderColor: '#333ff',
                 fill: true,
             }, {
-                data: dailyData(({deaths}) => deaths),
+                data: dailyData.map(({deaths}) => deaths),
                 label: 'Infected',
                 borderColor: 'red',
                 backgroundColor: 'rgba(255, 0, 0, 0.5)',
