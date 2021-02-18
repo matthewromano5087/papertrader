@@ -7,7 +7,7 @@ import 'weather-icons/css/weather-icons.css';
 function App() {
   return (
     <div className="App">
-     <h1>Weather App</h1>
+     <Weather />
     </div>
   );
 }
