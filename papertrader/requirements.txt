@@ -1,0 +1,8 @@
+aiofiles
+aiosqlite
+cachier
+databases
+fastapi
+fastapi-users[sqlalchemy]
+sqlalchemy
+uvicorn
